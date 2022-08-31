@@ -1,4 +1,9 @@
 
+
+body{
+    width:1040px 100%;
+    height:100%;
+}
 #container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -9,10 +14,12 @@
 
 .nav-bar{
     display:flex;
+    width: 100%;
     justify-content: flex-end;
     flex-direction: row-reverse;
     justify-content: space-between;
     margin: 40px;
+    
 }
 
 .nav-bar a{
@@ -23,28 +30,52 @@
 }
 
 
-.main-content{
+.firsthalf{
     grid-column: 1/13;
-    grid-row: 1/17;
-    background-color:rgb(150 150 150);
+    grid-row: 1/8;
+    background-color:white;
+}
+
+.curve{
+    grid-column: 1/2;
+    grid-row: 8/9;
+}
+
+.secondhalf{
+    grid-column: 1/13;
+    grid-row: 9/17;
 }
 
 .section{
     grid-column: 1/13;
     grid-row: 17/20;
-    background-color: rgb(67, 67, 92);
+    background-color:  hsl(238, 22%, 44%);
 }
 
 .footer{
     grid-column: 1/13;
     grid-row: 20/24;
-    background-color:rgb(8, 3, 41);
+    background-color:hsl(243, 87%, 12%);
+}
+
+
+.firsthalf{
+    display: flex;
+}
+
+.secondhalf{
+    background-color: hsl(240, 75%, 98%);
+    display:flex;
+}
+
+.icon1{
+   margin: 20px 50px 50px 0px;
 }
 
 .content1{
     display:block;
-    margin: 65px 50% 130px 40px;
-    padding: 10px 200px 20px 0px;
+    margin: 65px 20px 130px 40px;
+    /*padding: 10px 200px 20px 0px;*/
    
 }
 
@@ -56,6 +87,7 @@
     border: blue;
 }
 
+
 .content1 input{
     height: 25px;
     width: 250px;
@@ -63,7 +95,7 @@
 
 .content2{
     display:block;
-    margin: 0px 50% 20px 40px;
+    margin: 0px 0% 20px 40px;
     padding: 10px 60px 20px 0px;
 }
 
@@ -147,4 +179,8 @@
     grid-row: 2/5;
     list-style: none;
     line-height: 20px;
+}
+
+.icon2{
+    margin: 20px 50px 60px 0px;
 }
